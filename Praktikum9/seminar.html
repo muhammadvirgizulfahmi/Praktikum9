@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Regist Seminar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<form class="m-4">
+  <div class="form-group row">
+    <label for="nama" class="col-2 col-form-label">Nama Lengkap</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-qq"></i>
+          </div>
+        </div> 
+        <input id="nama" name="nama" placeholder="Masukkan Nama" type="text" class="form-control" required="required"> 
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <i class="fa fa-qq"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="tempat" class="col-2 col-form-label">Tempat Lahir</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-building-o"></i>
+          </div>
+        </div> 
+        <input id="tempat" name="tempat" placeholder="Masukkan Tempat Lahir" type="text" required="required" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <i class="fa fa-building-o"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="tgl" class="col-2 col-form-label">Tanggal, Lahir</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-moon-o"></i>
+          </div>
+        </div> 
+        <input id="tgl" name="tgl" type="date" required="required" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <i class="fa fa-moon-o"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-2">Gender</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="radio" id="radio_0" type="radio" required="required" class="custom-control-input" value="cowo"> 
+        <label for="radio_0" class="custom-control-label">Laki-Laki</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="radio" id="radio_1" type="radio" required="required" class="custom-control-input" value="cewe"> 
+        <label for="radio_1" class="custom-control-label">Perempuan</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-2 col-form-label">Email</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-google"></i>
+          </div>
+        </div> 
+        <input id="email" name="email" placeholder="Masukkan Email" type="text" required="required" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <i class="fa fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="select" class="col-2 col-form-label">Status Peserta</label> 
+    <div class="col-8">
+      <select id="select" name="select" class="custom-select" required="required">
+        <option value="select">Select</option>
+        <option value="sehat">Alhamdulillah sehat</option>
+        <option value="sakit">sakit...</option>
+        <option value="b">b aja</option>
+      </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-2 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+</body>
+</html> 
